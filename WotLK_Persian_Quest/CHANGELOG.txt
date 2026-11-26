@@ -1,0 +1,59 @@
+2.6.1
+- FIX: Blood Is Thicker (Marcia Chase, 13833) had no completion text, so the reward window showed English. Persian completion added.
+2.6.0
+- NEW Database_Speech_RS.lua (tools/speech_rs.json): ALL Ruby Sanctum speech in Persian - Sanctum Guardian Xerestrasza (intro story), Baltharus the Warborn, Saviana Ragefire, General Zarithrian, Halion (physical + twilight phases, realm-pressure raid emotes, orb emote).
+2.5.0
+- Achievement descriptions (NOT names) are translated, by achievement ID. First batch: Glory of the Hero + all 38 achievements inside it (Utgarde Keep ... Utgarde Pinnacle, The Oculus, Violet Hold, ...).
+- /wpq ach on|off. Data: Database_Achievements.lua, built by tools/make_achievements.py from tools/translations_achievements.json.
+2.4.1
+- "(Complete)" / "(Failed)" tags are shown in Persian for ALL quests (objective lines, quest-log list, tracker), also when the quest itself is not translated yet (only the tag is translated then). Words: WPQ_UI.status and labels in UIStrings.lua.
+- More space above the quest title (default 22 px, was 10; old saved default is migrated once). Adjust with /wpq top N.
+- Multi-line quest text no longer collides with the objectives/rewards below it: description, objectives, progress and reward text now get an explicit height that matches their manually wrapped lines.
+2.4.0
+- Dalaran Fishing dailies (Marcia Chase), by Quest ID: Blood Is Thicker, Dangerously Delicious, Jewel Of The Sewers, Disarmed! (The Ghostfish was already in Database.lua).
+2.3.0
+- Dalaran Jewelcrafting dailies (Timothy Jones), all 6 Shipment quests by Quest ID: Blood Jade Amulet, Glowing Ivory Figurine, Wicked Sun Brooch, Intricate Bone Figurine, Bright Armor Relic, Shifting Sun Curio. Title, description, objectives, progress, completion, objective lines.
+2.2.0
+- Dalaran Cooking dailies, all 5 quests in both faction versions (10 entries by Quest ID): Infused Mushroom Meatloaf, Sewer Stew, Mustard Dogs!, Convention at the Legerdemain, Cheese for Glowergold. Title, description, objectives, progress, completion and objective lines.
+- "Daily" / "(Daily)" tag in the quest log is now shown as Persian (روزانه); Dalaran zone header added.
+- tools/translations_dalaran_cooking.py builds tools/translations_dalaran_cooking.json -> Database_DalaranCooking.lua.
+2.1.0
+- Shadowmourne questline (Shadow's Edge, Unholy/Blood/Frost Infusion, A Feast of Souls, Shadowmourne..., The Lich King's Last Stand).
+- NEW Speech.lua: boss/NPC lines (say, yell, emote, raid-boss emote/warning) are translated from WPQ_DB.speech; pilot data: Professor Putricide, Blood-Queen Lana'thel, Sindragosa, The Lich King. Commands: /wpqspeech on|off, /wpqchat on|off.
+- Gossip greetings and options are translated from WPQ_DB.gossip / WPQ_DB.options (engine only, one sample line).
+- Speech lines now also match when the game inserted the player's class/race ($c/$r). Sample NPC: Ildine Sorrowspear.
+- Icecrown Citadel speech completed: all bosses and NPCs (Marrowgar, Deathwhisper, Saurfang, Festergut, Rotface, Valithria, Blood Council, Lana'thel, Lich King, Crok/Svalna, captains, Tirion, Mograine, ...), ~290 lines in total.
+- tools/make_speech.py builds speech/gossip Lua files from JSON.
+- Top padding above the quest title (default 10 px), adjustable with /wpq top N.
+- Objective lines (e.g. "Discover the Ghostfish mystery") are now right-aligned with the same right padding as the body text.
+- Default right padding raised from 8 to 16 px (old default is migrated automatically).
+- Database can be split into several files (Database*.lua, merged on load); entries by Quest ID.
+- Quests that share an English title (e.g. Alliance/Horde "Besieged!") pick the entry for the player's faction (field "faction").
+- Shadowmoon Valley, batch 1: the 12 opening-chain quests (Besieged! ... Minions of the Shadow Council, both factions).
+- tools/source/shadowmoon_valley_en.json: English source of all 199 zone quests; tools/glossary_fa.txt: fixed term list.
+2.0.0
+- Paragraph breaks are kept (blank line between paragraphs); also $b.
+- Quest title, progress window ("Continue/Cancel"), completion window, objective lines and the
+  quest-log list are translated. Headers, buttons and zone names come from UIStrings.lua.
+- Context aware: NPC window uses GetTitleText, quest log uses its own selection (fixes wrong quest picked).
+- Untranslated quests are restored to the original Blizzard font/alignment/width.
+- Latin words/numbers keep reading order inside Persian text; brackets and < > are mirrored; "5." punctuation fixed.
+- Lam-alef ligatures, Arabic yeh/kaf normalised to Persian forms.
+- Quest ID support, $n $c $r $g variables, scroll frames refreshed, apply() debounced.
+- Errors are no longer silent: /wpq errors, /wpq debug, /wpq dump.
+- tools/make_db.py builds Database.lua from translations.json.
+1.4.0
+- Added Vazirmatn (Persian-designed font) as the default; Noto Sans Arabic is the fallback.
+- Custom font support: put a .ttf in Fonts and run /wpq font File.ttf.
+- Right-side padding (default 8 px), adjustable with /wpq pad N.
+- Settings defaults are now initialised after SavedVariables load.
+1.3.0
+- Fixed stray "|" marks: ZWNJ/ZWJ/RLM/LRM are no longer printed (they only break letter joining).
+- Fixed reversed line order: text is now wrapped manually in logical order, then each line is reversed separately.
+- Lines are measured with a hidden FontString to match the real panel width.
+1.2.0
+- Reworked hooks and UI writes with defensive checks to reduce Lua errors.
+- Removed forced manual line breaks and blank paragraphs.
+- Added pipe/control-character cleanup.
+- Reduced line spacing adjustment to a subtle 2 px.
+- Rewrote The Ghostfish as one continuous natural Persian paragraph.

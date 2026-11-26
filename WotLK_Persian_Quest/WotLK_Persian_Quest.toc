@@ -1,0 +1,21 @@
+## Interface: 30300
+## Title: WotLK Persian Quest
+## Notes: Persian quests: RTL shaping, titles, progress/complete, UI labels, custom font
+## Author: WPQ Community Localization
+## Version: 2.6.1
+## SavedVariables: WPQ_Settings
+PersianRTL.lua
+UIStrings.lua
+Database.lua
+Database_ShadowmoonValley.lua
+Database_Shadowmourne.lua
+Database_DalaranCooking.lua
+Database_DalaranJewelcrafting.lua
+Database_DalaranFishing.lua
+Database_Achievements.lua
+Database_Speech_ICC.lua
+Database_Speech_ICC2.lua
+Database_Speech_Misc.lua
+Database_Speech_RS.lua
+Core.lua
+Speech.lua

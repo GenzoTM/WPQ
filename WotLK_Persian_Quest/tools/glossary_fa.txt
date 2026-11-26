@@ -1,0 +1,12 @@
+واژه‌نامه‌ی ثابت ترجمه (برای یکدست ماندن اسامی در همه‌ی کوئست‌ها)
+نام‌های خاص آوانگاری می‌شوند تا با اسم انگلیسی داخل بازی قابل تطبیق باشند.
+
+Burning Legion = لژیون سوزان | Legion Hold = دژ لژیون | Shadow Council = شورای سایه
+Shadowmoon Valley = دره‌ی شادومون | Shadowmoon Village = دهکده‌ی شادومون
+Wildhammer Stronghold = دژ وایلدهمر | Black Temple = معبد سیاه | Horde = هورد | Kor'kron = کورکرون
+Deathforge = دث‌فورج | Deathforge Tower = برج دث‌فورج | Slag Watch = اسلگ واچ | Fetid Pool = برکه‌ی فتید
+Infernal = اینفرنال | Fel Reaver = فل ریور | Fel Bomb = بمب فِل
+Wing Commander Nuainn = فرمانده بال نوآین | Blood Guard Gulmok = بلاد گارد گولمک
+Stormer Ewan Wildwing = استورمر ایوان وایلدوینگ | Scout Zagran = پیشاهنگ زاگران
+
+سبک: نوشتاری، مخاطب «تو»، اعداد لاتین، نیم‌فاصله با ~ در JSON.

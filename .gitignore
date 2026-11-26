@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# python
+__pycache__/
+*.pyc
+
+# archives and backups
+*.rar
+*.zip
+*.7z
+*.bak
+*.orig
+*~

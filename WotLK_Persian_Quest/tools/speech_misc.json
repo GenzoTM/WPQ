@@ -1,0 +1,11 @@
+{
+ "speech": {
+  "Welcome.": "خوش آمدی.",
+  "Greetings.": "درود.",
+  "Let me know if you need help finding anything, $c.": "اگر برای پیدا کردن چیزی کمک خواستی، به من بگو، $c.",
+  "Welcome!": "خوش آمدی!",
+  "Greetings, $c.": "درود، $c.",
+  "Greetings! Please have a look around.": "درود! بفرما، یک نگاهی بینداز.",
+  "Welcome. May I help you find something?": "خوش آمدی. می~توانم در پیدا کردن چیزی کمکت کنم؟"
+ }
+}
