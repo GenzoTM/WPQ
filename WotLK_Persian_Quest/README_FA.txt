@@ -1,4 +1,4 @@
-WPQ 2.6.1  (WoW 3.3.5a / Warmane)
+WPQ 1.0.0  (WoW 3.3.5a / Warmane)
 
 نصب: WoW را ببندید، پوشه‌ی قدیمی WotLK_Persian_Quest را پاک کنید، این پوشه را بگذارید.
 در بازی: /wpq status

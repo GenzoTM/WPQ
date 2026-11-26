@@ -1,5 +1,5 @@
 local addonName = ...
-local VERSION = "2.5.0"
+local VERSION = "1.0.0"
 local frame = CreateFrame("Frame")
 WPQ_Settings = WPQ_Settings or { enabled = true, debug = false }
 

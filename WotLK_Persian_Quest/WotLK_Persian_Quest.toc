@@ -2,7 +2,7 @@
 ## Title: WotLK Persian Quest
 ## Notes: Persian quests: RTL shaping, titles, progress/complete, UI labels, custom font
 ## Author: WPQ Community Localization
-## Version: 2.6.1
+## Version: 1.0.0
 ## SavedVariables: WPQ_Settings
 PersianRTL.lua
 UIStrings.lua

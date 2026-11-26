@@ -1,3 +1,5 @@
+1.0.0
+- First public release on GitHub. The version numbers below (2.0.0 - 2.6.1) were internal development builds; numbering restarts at 1.0.0 from here.
 2.6.1
 - FIX: Blood Is Thicker (Marcia Chase, 13833) had no completion text, so the reward window showed English. Persian completion added.
 2.6.0
