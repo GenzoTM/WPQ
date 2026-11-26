@@ -8,12 +8,7 @@ WPQ 1.0.0  (WoW 3.3.5a / Warmane)
 - UIStrings.lua  عنوان‌ها، دکمه‌ها، اسم زون‌ها، کلاس/نژاد (دستی ویرایش کنید)
 - Fonts\         فونت‌ها
 
-اضافه کردن کوئست
-1) tools/translations.json را ویرایش کنید (نمونه: The Ghostfish).
-   فیلدها: title_en, title, description, objectives, progress, completion, lines (و در صورت نیاز id)
-   بین پاراگراف‌ها یک خط خالی بگذارید. نیم‌فاصله را می‌توانید با ~ بنویسید.
-2) python tools/make_db.py tools/translations.json Database.lua
-3) در بازی /reload
+پیشنهاد ترجمه یا گزارش باگ: از بخش Issues در صفحه‌ی گیت‌هاب پروژه (github.com/GenzoTM/WPQ) بنویسید. پیشنهاد و انتقاد: تلگرام @GenzoTM
 
 دستورها
 /wpq on | off | status | debug | errors | dump | font File.ttf | pad N | top N | lam on|off | ach on|off
